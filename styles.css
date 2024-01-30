@@ -1,0 +1,48 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.menu-hamburguesa {
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .linea {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 2.5px 0;
+    transition: 0.4s; /* Agregamos una transición a las líneas */
+  }
+  
+  .menu-contenido {
+    opacity: 0;
+    display: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-left: 10px;
+    transition: opacity 0.4s;
+    width: 150px;
+  }
+  
+  .menu-contenido ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-contenido ul li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-contenido ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
